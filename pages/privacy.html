@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/scripts/style.css">
+  <title>ByteSeeker | Privacy</title>
+    <script>
+        fetch('/scripts/head.html')
+            .then(response => response.text())
+            .then(data => {
+                document.head.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+</head>
+<!-- Page -->
+<body>
+<div data-include="/scripts/banner.html"></div>
+<div data-include="/scripts/header.html"></div>
+
+ <main class="container">
+    <section class="privacy">
+      <h2>ByteSeeker Privacy Policy</h2>
+      <hr>
+      <p>I, Jacob, don't PERSONALLY track anything but your name and email for my contact page. This is a personal website, not a business website. Currently, as of 10/19/2025, 
+        the platforms I use are Cloudflare (for domain registation), PHP server code (for my contact page - your email and name) and any social button on my <a href="/">home page.</a> For their tracking and privacy policys, 
+        please head over to their websites.
+      </p>
+			<br>
+ <h6>Updated 10/19/25</h6>
+   </section>
+</main>
+<!-- Footer -->
+<div data-include="/scripts/footer.html"></div>
+
+<script src="/scripts/inject.js"></script>
+<script src="/scripts/script.js"></script>
+</body>
+</html>

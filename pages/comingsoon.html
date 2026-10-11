@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/scripts/style.css">
+  <title>ByteSeeker | Coming Soon</title>
+    <script>
+        fetch('/scripts/head.html')
+            .then(response => response.text())
+            .then(data => {
+                document.head.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+</head>
+<!-- Page -->
+<body>
+<div data-include="/scripts/banner.html"></div>
+<div data-include="/scripts/header.html"></div>
+
+<main class="container">
+    <section class="comingsoon">
+        <h3>Did you click on something new? Something that's in development? Probably, but either way, you should go back <a href="/">home.</a>
+        </h3>
+    </section>
+</main>
+<!-- Footer -->
+<div data-include="/scripts/footer.html"></div>
+
+<script src="/scripts/inject.js"></script>
+<script src="/scripts/script.js"></script>
+</body>
+</html>

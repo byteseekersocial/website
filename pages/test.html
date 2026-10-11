@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Test page -->
+
+<!-- Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/scripts/style.css">
+  <title>ByteSeeker | Test</title>
+    <script>
+        fetch('/scripts/head.html')
+            .then(response => response.text())
+            .then(data => {
+                document.head.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+</head>
+<!-- Body -->
+<body>
+<div data-include="/scripts/banner.html"></div>
+<div data-include="/scripts/header.html"></div>
+<section class="test">
+<h2>Test successful. Now fuck off.</h2>
+<hr>
+<div
+  class="cf-turnstile"
+  data-sitekey="0x4AAAAAACgEYSyRbNaY8-W-"
+  data-theme="light"
+  data-size="normal"
+  data-callback="onSuccess"
+></div>
+</section>
+<!-- Footer -->
+<div data-include="/scripts/footer.html"></div>
+
+<script src="/scripts/inject.js"></script>
+<script src="/scripts/script.js"></script>
+</body>
+</html>
