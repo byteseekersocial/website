@@ -1,0 +1,28 @@
+{
+    "name": "ByteSeeker Website",
+    "short_name": "ByteSeeker",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/img/newFavicon192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/newFavicon512.png",
+            "sizes": "512x512",
+            "type": "image/ico"
+        }
+    ],
+
+    "shortcuts": [
+        {
+            "name": "Contact Me",
+            "url": "/pages/contact.php",
+            "icons": [{ "src": "/img/Logos/emailLogo.png", "sizes": "192x192" }]
+        }
+    ],
+    "theme_color": "#ff0000",
+    "background_color": "#0d0d0d",
+    "display": "standalone"
+}

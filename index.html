@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/scripts/style.css">
+  <title>ByteSeeker | Home</title>
+    <script>
+        fetch('/scripts/head.html')
+            .then(response => response.text())
+            .then(data => {
+                document.head.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+</head>
+<!-- Body -->
+<body>
+<div data-include="/scripts/banner.html"></div>
+<div data-include="/scripts/header.html"></div>
+
+ <main class="container">
+	<!-- Welcome Section -->
+    <section class="about">
+      <h2>Hey there!</h2>
+  <p>
+      I just wanted to say, you lost the game. Sorry not sorry.
+  </p>
+    </section>
+<hr><br>
+	
+	<!-- Links Section -->
+    <section class="links">
+      <h2>All My Links</h2>
+      <nav class="link">
+        <div class="link-img-space">
+          <div class="link-img">
+            <a href="https://twitch.tv/byteseekersocial" target="_blank">
+              <img src="/img/Logos/twitchLogo.png">
+                <p class="image-caption">Twitch</p></a>
+        </div>
+         <div class="link-img">
+            <a href="https://facebook.com/byteseekersocial" target="_blank">
+              <img src="/img/Logos/facebookLogo.png">
+                <p class="image-caption">Facebook</p></a>
+          </div>
+          <div class="link-img">
+            <a href="https://www.tiktok.com/@byteseekersocial?_t=ZT-8y9CaXnqNtv&_r=1" target="_blank">
+              <img src="/img/Logos/tiktokLogo.png">
+                <p class="image-caption">Tiktok</p></a>
+          </div>
+          <div class="link-img">
+            <a href="https://www.instagram.com/thetechiejacob/" target="_blank">
+              <img src="/img/Logos/instagramLogo.png">
+                <p class="image-caption">Instagram</p></a>
+          </div>
+          <div class="link-img">
+            <a href="https://www.snapchat.com/@byteseeker" target="_blank">
+              <img src="/img/Logos/snapchatLogo.png">
+                <p class="image-caption">Snapchat</p></a>
+          </div>
+          <div class="link-img">
+            <a href="https://steamcommunity.com/id/ByteSeeker" target="_blank">
+              <img src="/img/Logos/steamLogo.png">
+                <p class="image-caption">Steam</p></a>
+          </div>
+          <div class="link-img">
+            <a href="https://cash.app/$thetechiejacob" target="_blank">
+              <img src="/img/Logos/cashappLogo.png">
+                <p class="image-caption">Cashapp</p></a>
+          </div>
+          <div class="link-img">
+            <a href="https://paypal.me/amechanicsbest" target="_blank">
+              <img src="/img/Logos/paypalLogo.png">
+                <p class="image-caption">Paypal</p></a>
+          </div>
+          <div class="link-img">
+            <a href="https://discord.gg/wTqpbjX4Tj" target="_blank">
+              <img src="/img/Logos/discordLogo.png">
+                <p class="image-caption">Discord</p></a>
+          </div>
+          <div class="link-img">
+            <a href="https://profile.playstation.com/byteseeker" target="_blank">
+              <img src="/img/Logos/playstationLogo.png">
+                <p class="image-caption">Playstation</p></a>
+          </div>
+          <div class="link-img">
+            <a href="mailto:byteseeker@byteseeker.link" target="_blank">
+              <img src="/img/Logos/emailLogo.png">
+                <p class="image-caption">Email</p></a>
+          </div>
+          <div class="link-img">
+            <a href="tel:+12602225253" target="_blank">
+              <img src="/img/Logos/phoneLogo.png">
+                <p class="image-caption">Call me</p></a>
+          </div>
+        </div>
+      </nav>
+    </section>
+   
+</main>
+<!-- Footer -->
+<div data-include="/scripts/footer.html"></div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/scripts/inject.js"></script>
+<script src="/scripts/script.js"></script>
+</body>
+</html>
+
+<!-- made by Jacob as a hobby project. -->
